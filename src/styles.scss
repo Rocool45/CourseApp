@@ -2,3 +2,8 @@
 /* src/styles.css */
 /* src/styles.scss */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* remove this from src/app/app.component.scss */
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+
+ /* instead in src/styles.scss */
+@import '~bootstrap/dist/css/bootstrap.min.css';
