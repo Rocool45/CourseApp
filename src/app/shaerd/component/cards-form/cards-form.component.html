@@ -1,0 +1,20 @@
+        <h2 class="alert alert-primary text-center mt-3">Course Form</h2>
+        <div class="card my-5">
+    <div class="card-body">
+        <form #cardform="ngForm" (ngSubmit)="OnAddcards()">
+            <div class="form-group">
+                <label for="">Course</label>
+                <input required type="text" ngModel name="heading" class="form-control">
+            </div>
+
+              <div class="form-group">
+                <label for="content">Course Information</label>
+                <textarea required ngModel name="content" name="content" rows="2" class="form-control"></textarea>
+            </div>
+            
+            <button type="submit" *ngIf="!isinEditMode" mat-raised-button color="primary" class="btn-block">Add Course</button>
+            <button (click)="OnUpdateCard()" type="button" *ngIf="isinEditMode" mat-raised-button color="primary" class="btn-block">Update Course</button>
+        </form>
+    </div>
+</div>
+
